@@ -20,14 +20,14 @@ void testit(int val)
 
 size_t factorial(size_t val) 
 {
-      if (val == 0) return 1;
-      return val * factorial(val - 1);
+      if (val == 0) return 1; // Base Case
+      return val * factorial(val - 1); // Recursive Case
 }
 
 size_t factorial2(size_t val, size_t accum) 
 {
-      if (val == 1) return accum;
-      return factorial2(val - 1, val * accum);
+      if (val == 1) return accum;// Base Case
+      return factorial2(val - 1, val * accum);// Recursive Case
 }
 
 
